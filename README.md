@@ -9,4 +9,4 @@ Outputs:
 - zR_range.dat: zR models considered;
 - R_correction.dat: R_zR(z_dash,k) values, with each column referring to values for a different zR model;
 
-If you use this script for your scientific work, we kindly ask you to please reference: Molaro et al. in prep
+If you use this script for your scientific work, we kindly ask you to please reference: Molaro et al. in prep (https://arxiv.org/abs/2109.06897)
