@@ -27,7 +27,7 @@ if zRmin < 5.3 or zRmax < 5.3 or zRmin > 6.7 or zRmax >  6.7:
 
 #Convert to arrays
 NzR		= 1+int((zRmax - zRmin)/dzR)
-Nlogk		= 1+int((logkmax - logkmin)/dlogk)
+Nlogk		= 1+int((1000.*logkmax - 1000.*logkmin)/(1000.*dlogk))
 zR       	= np.linspace(zRmin,zRmax,NzR, endpoint=True)
 logk_out 	= np.linspace(logkmin,logkmax,Nlogk, endpoint=True)
 
@@ -59,7 +59,7 @@ R = np.array([[	1.10912, 1.12574, 1.14715, 1.16714, 1.19071, 1.23308, 1.26416, 1
   [ 0.899729, 0.913425, 0.912138, 0.909014, 0.912819, 0.912620, 0.903737, 0.903384, 0.908673, 0.904995, 0.900418, 0.886183, 0.883490, 0.884748],
   [ 0.869178, 0.861596, 0.876427, 0.869691, 0.877194, 0.878800, 0.882308, 0.885625, 0.883147, 0.883400, 0.881848, 0.877351, 0.868798, 0.864382]])
 
-f=interpolate.interp2d(x,y,R,kind='cubic')
+f=interpolate.interp2d(x,y,R,kind='linear') #Default is linear, change if required
 
 #Calculate z_mid using Eqn. 3 
 z_mid = [0]*NzR
