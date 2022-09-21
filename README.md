@@ -1,4 +1,4 @@
-This routine calculates the patchy correction R_zR(z_dash,k) as defined in Eqn. 2, Molaro et al. in prep, for EoR history models ending at redshift zR (defined as redshift at which the neutral hydrogen fraction first falls below 10^-3) in observational redshift bin z_dash
+This routine calculates the patchy correction R_zR(z_dash,k) as defined in Eqn. 2, Molaro et al. 2022, for EoR history models ending at redshift zR (defined as redshift at which the neutral hydrogen fraction first falls below 10^-3) in observational redshift bin z_dash
 
 User-defined parameters:
 - Range of EoR history models zR for which R_zR(z_dash,k) is calculated can be selected through the user-defined range limits and interval zRmin, zRmax, and dzR respectively, while k values at which R_zR(z_dash,k) is calculated can be selected using logkmin, logkmax, and dlogk.
@@ -9,4 +9,4 @@ Outputs:
 - zR_range.dat: zR models considered;
 - R_correction.dat: R_zR(z_dash,k) values, with each column referring to values for a different zR model;
 
-If you use this script for your scientific work, we kindly ask you to please reference: Molaro et al. in prep (https://arxiv.org/abs/2109.06897)
+If you use this script for your scientific work, we kindly ask you to please reference: Molaro et al. in 2022 (https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.6119M/abstract)
